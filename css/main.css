@@ -1,0 +1,134 @@
+/**
+ *	väldigt(!) simpel reset
+ */
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	font-family: 'helvetica', 'arial', sans-serif;
+   	height:100%;
+}
+p{
+	padding: 0.2em 0;
+}
+
+/**
+ * header
+ */
+#container{
+	min-height:100%;
+	position:relative;
+}
+
+.wrapper{
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	width: 720px;
+	margin: 0 auto;
+	height: auto;
+}
+
+#header{
+	border-bottom: 1px solid #ccc;
+}
+
+#header h1{
+	padding: 10px;
+	color: #333;
+}
+
+#header ul{
+	background: #eee;
+	border-top: 1px solid #ccc;
+	list-style-type: none;
+}
+
+#header ul>li{
+	float: left;
+	display: block;
+	padding: 1em;
+}
+
+#header ul>li>a{
+	color: #111;
+	text-decoration: none;
+}
+
+/**
+ * page
+ */
+#page{
+	background: #f7f7f7;
+	border-bottom: 1px solid #ccc;
+}
+
+#content{
+	padding: 10px;
+}
+
+table{
+	margin: 20px auto;
+	border: 1px solid #aaa;
+	border-collapse: collapse;
+}
+tr{
+	display: block;
+	padding: 5px;
+	border-bottom: 1px solid #aaa;
+	background: #eee;
+	cursor: pointer;
+}
+tr:nth-child(odd){
+	background: #ddd;
+}
+tr:last-child{
+	border-bottom: none;
+}
+#table-head{
+	background: #aaa;
+	cursor: default;
+}
+th{
+	font-weight: bold;
+	text-align: left;
+}
+td, th{
+	margin-right: 10px;
+	width: 100px;
+}
+button{
+	display: block;
+	width: 100px;
+	margin: 0 auto;
+}
+
+/**
+ * footer
+ */
+#footer{
+	height: 100px;
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+}
+#footer .wrapper{
+	height: 100%;
+}
+
+/**
+ * clearfix för uls med floats som förstör css-griden
+ * detta är ett litet css-hack som gör livet MYCKET lättare
+ * går att kopiera varifrån som helst på internet.
+ */
+.cf:after,
+.cf:before {
+	content: '';
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+.cf {
+	zoom: 1;
+}

@@ -1,0 +1,6 @@
+.selected:after{
+	margin-top: -20px;
+	content: 'x';
+	color: #060;
+	float: right;
+}
